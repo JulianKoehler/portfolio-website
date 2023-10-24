@@ -56,7 +56,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium leading-[1.5]">
-        <span className="font-bold">Hey there, I'm Julian.</span>
+        <span className="font-bold">Hey there, I&apos;m Julian.</span>
         <br />
         <span className="font-bold text-4xl">Frontend Developer.</span>
         <br />I enjoy building <span className="italic">web applications & websites</span>.<br /> My focus is <span className="underline">React</span>{" "}

@@ -27,8 +27,8 @@ export default function Project({ title, description, links, tags, imageUrl }: P
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">{description}</p>
           <div className="mt-3 flex gap-2">
-            {links.map(link => (
-              <button>
+            {links.map((link, index) => (
+              <button key={index}>
                 <a className="bg-white dark:bg-white/40 dark:text-gray-950 font-bold text-sm text-gray-800 hover:text-gray-950 py-2 px-4 flex items-center gap-2 rounded-full borderBlack hover:scale-110 active:scale-105 transition" href={link.href} target="_blank">{link.label}</a>
               </button>
             ))}
