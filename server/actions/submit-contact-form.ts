@@ -5,13 +5,13 @@ import { getErrorMessage, validateString } from "@/lib/helpers";
 import ContactFormEmail from "@/email/contact-form-email";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
 const submitContactForm = async (formData: FormData) => {
   const absender = formData.get("email");
   const message = formData.get("message");
 
-  if (!validateString(process.env.MY_EMAIL, 100)) {
+  if (!validateString(process.env.NEXT_PUBLIC_MY_EMAIL, 100)) {
     return {
       message: "No email address found in the environment variables",
     };
@@ -32,7 +32,7 @@ const submitContactForm = async (formData: FormData) => {
   try {
     await resend.emails.send({
       from: "Portfolio Website <joboffer@resend.dev>",
-      to: process.env.MY_EMAIL,
+      to: process.env.NEXT_PUBLIC_MY_EMAIL,
       subject: `New message from a recruiter!`,
       reply_to: absender,
       react: React.createElement(ContactFormEmail, {
