@@ -9,9 +9,9 @@ const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
 const submitContactForm = async (formData: FormData) => {
   const absender = formData.get("email");
-  const message = formData.get("message");
+  const message = formData.get("message");  
 
-  if (!validateString(process.env.NEXT_PUBLIC_MY_EMAIL, 100)) {
+  if (!process.env.NEXT_PUBLIC_MY_EMAIL) {
     return {
       message: "No email address found in the environment variables",
     };
