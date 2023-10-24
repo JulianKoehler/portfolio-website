@@ -11,6 +11,8 @@ const submitContactForm = async (formData: FormData) => {
   const absender = formData.get("email");
   const message = formData.get("message");  
 
+  console.log(!!process.env.NEXT_PUBLIC_MY_EMAIL);
+
   if (!process.env.NEXT_PUBLIC_MY_EMAIL) {
     return {
       message: "No email address found in the environment variables",
