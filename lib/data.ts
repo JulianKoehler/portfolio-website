@@ -44,7 +44,7 @@ export const experiencesData = [
   {
     title: "Learning web development self taught",
     location: "Hannover",
-    description: "I dedicted my entire free time 10-20 hours a day to make my dream of becoming a software developer come true",
+    description: "I dedicted my entire free time 10-20 hours a week to make my dream of becoming a software developer come true",
     icon: React.createElement(LuGraduationCap),
     date: "06/2022 - 05/2023",
   },
