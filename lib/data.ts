@@ -72,7 +72,7 @@ export const projectsData = [
         href: "https://kanban-board-jet.vercel.app"
       },
     ],
-    tags: ["React", "Next.js", "Typescript", "Firebase", "Tailwind", "Redux"],
+    tags: ["Next.js", "Typescript", "Tailwind", "Redux", "fastAPI", "Postgresql"],
     imageUrl: kanbanImg,
   },
   {
@@ -109,4 +109,4 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind", "Framer Motion", "Redux", "Python", "GraphQL", "RESTful", "Git"] as const;
+export const skillsData = ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind", "Framer Motion", "Redux", "Python", "fastAPI", "SQL", "GraphQL", "RESTful", "Git"] as const;
