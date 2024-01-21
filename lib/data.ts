@@ -61,7 +61,7 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Kanban Board",
-    description: "A fully fleshed task management web app with authentication. Demo Credentials available in the Readme",
+    description: "A fullstack kanban project management web app with authentication. Demo Credentials available in the Readme",
     links: [
       {
         label: "Code",
